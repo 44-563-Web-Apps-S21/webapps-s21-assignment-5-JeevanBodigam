@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Plants</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Plants by Jeevan Bodigam</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">B</div>
+            <div class="col-sm-2">O</div>
+            <div class="col-sm-2">D</div>
+            <div class="col-sm-2">I</div>
+            <div class="col-sm-2">G</div>
+            <div class="col-sm-2">A</div>
+        </div>
+        <div class="row">
+            <div class="col-md">BEET</div>
+            <div class="col-md">OPUNTIA</div>
+            <div class="col-md">DIOON</div>
+            <div class="col-md">IRIS</div>
+            <div class="col-md">GOLDEN RAY</div>
+            <div class="col-md">AVENS</div>
+        </div>
+        <br>
+        <p><b>Result: </b> When inspected in the browser the plants row breaks first. <br>
+            <b> Explanation: </b>
+            Eventhough we are using .col-sm and .col-md classes the
+            columns by default would fit to the extra-large and large screens.
+            But since we are using .col-md class it would shrink for the devices which are having screen width
+            less than
+            medium devices
+            i.e,. at the breakpoint 767px screen width and less and remains intact for >=768px.
+            In similar fashion, the letters row shrinks at screen width less than 568px.
+        </p>
+    </div>
+
+</body>
+
+</html>
