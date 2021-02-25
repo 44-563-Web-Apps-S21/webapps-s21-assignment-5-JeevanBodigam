@@ -9,10 +9,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .cardsss{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="plants.html">Happy Plants</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="cat.html">Cat </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dog.html">Dog</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
     <h1>Plants by Jeevan Bodigam</h1>
     <div class="container">
         <div class="row">
@@ -44,19 +70,24 @@
         </div>
 
     </div>
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-3 m-1">
-                <img src="images/opuntia.jpg" alt="OPUNTIA" class="img-responsive" width="400" height="500" style="margin: 1px; z-index: 1;">
-            </div>
-            <div class="col-sm-12 col-md-3 m-1" >
-                <img src="images/goldenray.jpg" alt="Goldern Ray" width="400" height="500" style="margin: 1px;">
-            </div>
-            <div class=" col-sm-12 col-md-3 m-1">
-                <img src="images/iris.jpg" alt="IRIS" width="400" height="500" style="margin: 1px;">
-            </div>
-        </div>
-    </div> -->
+    <div class="container">
+        <img src="images/opuntia.jpg" alt="OPUNTIA" class="img-fluid" width="500" height="400">
+
+        <img src="images/goldenray.jpg" alt="Golden Ray" class="img-fluid" width="500" height="400">
+
+        <img src="images/iris.jpg" alt="IRIS" width="500" class="img-fluid" height="400">
+
+    </div>
+    <div class="container">
+
+        <img src="images/opuntia.jpg" alt="OPUNTIA" class="img-thumbnail" width="200" height="200" style="margin: 1px;">
+
+        <img src="images/goldenray.jpg" alt="Goldern Ray" class=" img-thumbnail" width="200" height="200"
+            style="margin: 1px;">
+
+        <img src="images/iris.jpg" alt="IRIS" width="200" height="200" class="  img-thumbnail" style="margin: 1px;">
+
+    </div>
     <br>
     <div class="table-responsive m-auto" style="width: 90%;">
         <table class="table table-striped table-bordered text-center table-hover table-sm">
@@ -73,20 +104,20 @@
                 <tr>
                     <th scope="row">B</th>
                     <td>Beet</td>
-                    <td>Rajasthan</td>
-                    <td>Cactonia</td>
+                    <td>Beedar</td>
+                    <td>Biryani</td>
                 </tr>
                 <tr class="bg-default">
                     <th scope="row">O</th>
                     <td>OPUNTIA</td>
-                    <td>Thailand</td>
+                    <td>Ockland</td>
                     <td>Opunin Rice</td>
                 </tr>
                 <tr>
                     <th scope="row">D</th>
                     <td>DIOON</td>
                     <td>Delhi</td>
-                    <td>Corn</td>
+                    <td>Dosa</td>
                 </tr>
                 <tr>
                     <th scope="row">I</th>
@@ -110,7 +141,7 @@
         </table>
     </div>
 
-    <div class="container-fluid">
+    <div>
         <div class="mt-4">
             <div class="btn btn-primary">B</div>
             <div class="btn btn-success">O</div>
@@ -136,6 +167,82 @@
             </div>
         </div>
     </div>
+    <br>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Check my Pets
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="cat.html">Cat-Page</a>
+            <a class="dropdown-item" href="dog.html">Dog-Page</a>
+
+        </div>
+    </div>
+    <form class="mt-2">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="plant">Plant</label>
+            <input type="text" placeholder="Enter your plant" id="plant" class="form-control" />
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="checkforSignup">Sign up for newsletter?</label>
+            <input type="checkbox" class="form-check-input" id="checkforSignup" style="margin: 6px;">
+
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+<br>
+    
+<div class="cardsss">
+    <div class="card" style="width: 18rem; margin: 2px;">
+        <img class="card-img-top" src="images/opuntia.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Opuntia</h5>
+            <p class="card-text">Opuntia, commonly called prickly pear, is a genus of flowering plants in the
+                cactus
+                family Cactaceae. Prickly pears are also known as tuna (fruit), sabra, nopal (paddle, plural
+                nopales)
+                from the Nahuatl word nōpalli for the pads, or nostle, from the Nahuatl word nōchtli for the
+                fruit; or
+                paddle cactus</p>
+            <a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank" class="btn btn-primary">More Info
+                Here</a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem; margin: 2px;">
+        <img class="card-img-top" src="images/goldenray.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Golden Ray</h5>
+            <p class="card-text">Othello Golden Ray Ligularia is a great plant for some color in the Woodland
+                Garden or a shady area. It has somewhat rounded, medium green to burgundy leaves with yellow
+                flowers that explode from midsummer to late summer. ... It makes a great cut flower and will
+                attract butterflies and hummingbirds.</p>
+            <a href="https://www.americanmeadows.com/perennials/unique-perennials/ligularia-the-rocket" target="_blank"
+                class="btn btn-primary">More Info
+                Here</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;margin: 2px;">
+        <img class="card-img-top" src="images/iris.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Iris</h5>
+            <p class="card-text">Iris is a genus of 260–300 species of flowering plants with showy flowers. It
+                takes its name from the Greek word for a rainbow, which is also the name for the Greek goddess
+                of the rainbow, Iris.Some authors state that the name refers to the wide variety of flower
+                colors found among the many species</p>
+            <a href="https://en.wikipedia.org/wiki/Iris_(plant)" target="_blank" class="btn btn-primary">More Info
+                Here</a>
+        </div>
+    </div>
+</div>
+
+
 </body>
 
 </html>
